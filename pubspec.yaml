@@ -1,0 +1,63 @@
+name: meditrack_patient
+description: "MediTrack CF - Patient Mobile Application"
+publish_to: 'none'
+version: 0.0.8+8
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.3
+  
+  # Notifications & Alarms
+  flutter_local_notifications: ^18.0.1
+  permission_handler: ^11.1.0
+  timezone: ^0.9.2
+  flutter_timezone: ^3.0.0
+  audioplayers: ^6.1.0
+  vibration: ^2.0.0
+
+  # Charts
+  fl_chart: ^0.66.0
+  
+  # Utilities
+  intl: ^0.18.1
+  provider: ^6.1.1
+  shared_preferences: ^2.3.3
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  table_calendar: ^3.0.9
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/images/logo.jpg"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.jpg
+  android_12:
+    image: assets/images/logo.jpg
+    icon_background_color: "#ffffff"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/alarm ringtone/
